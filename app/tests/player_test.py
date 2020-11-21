@@ -1,5 +1,6 @@
 import unittest
 from modules.player import Player
+from modules.game import Game
 
 class TestPlayer(unittest.TestCase):
 

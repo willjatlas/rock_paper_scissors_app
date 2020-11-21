@@ -1,5 +1,5 @@
 import unittest
-from app.modules.player import Player
+from modules.player import Player
 
 class TestPlayer(unittest.TestCase):
 
@@ -8,3 +8,6 @@ class TestPlayer(unittest.TestCase):
 
     def test_player_has_name(self):
         self.assertEqual("Chris Pratt", self.player.name)
+
+    def test_player_has_choice(self):
+        self.assertEqual("rock", self.player.choice)

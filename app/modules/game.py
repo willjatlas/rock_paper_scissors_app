@@ -18,7 +18,7 @@ class Game:
             self.generate_cpu_player(self.player_2)
 
     def generate_cpu_player(self, cpu):
-        """ Make the choice for the computer player """ 
+        """ Makes the computer player """ 
         cpu.choice = random.choice(self.choice_list)
         cpu.name = "A(°_o)I"
 

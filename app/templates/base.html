@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>{{title}} RPS</title>
 </head>
 <body>
-    
+    <nav id="nav-bar">
+        <div id="nav-bar-flex">
+            <h1>This is ROCK, PAPER... SCISSORS!!!</h1>
+            <a class="links" href="/">Home</a>
+            <a class="links" href="/singleplay">Single Player</a>
+            <a class="links" href="/multiplay">Multiplayer</a>
+        </div>
+    </nav>
+    {% block content %}
+
+
+    {% endblock %}  
 </body>
 </html>

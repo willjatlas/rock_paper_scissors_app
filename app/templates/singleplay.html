@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<main>
+    <div id= "text-container">
+        <h2>
+            Single Player  
+        </h2>
+        <p>
+           Enter your name and choose your weapon! 
+        </p>
+        <form action="/play" method="post">
+            <input type="text" name="player_1_name" id="player_1_name" placeholder="Enter your name...">
+            <select id="player_1_choice" name="player_1_choice">
+                <option value="rock">ROCK</option>
+                <option value="paper">PAPER</option>
+                <option value="scissors">SCISSORS</option>
+            </select>
+            <input type="submit" value= "PLAY">
+        </form>
+    </div>
+</main>
+
+{% endblock %}
